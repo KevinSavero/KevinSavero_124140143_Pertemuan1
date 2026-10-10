@@ -126,7 +126,9 @@ Untuk mencoba fitur website, masukkan nama produk, harga satuan, dan jumlah bara
 
 ## 7. Screenshot Aplikasi
 
-
+![gambar](./screenshots/Screenshot 2026-10-10 105414.png)
+![gambar](./screenshots/Screenshot 2026-10-10 105438.png)
+![gambar](./screenshots/Screenshot 2026-10-10 112800.png)
 
 ---
 
