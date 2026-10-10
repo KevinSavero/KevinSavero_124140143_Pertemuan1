@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --ink: #211d2b;
+  --muted: #858091;
+  --purple: #6c4ce3;
+  --purple-light: #f0ecff;
+  --orange: #ff9b54;
+  --line: #ece9f2;
+  --surface: #ffffff;
+  --bg: #f7f6fb;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+}
+.topbar {
+  height: 82px; padding: 0 7.5%; display: flex; align-items: center; gap: 13px;
+  background: var(--surface); border-bottom: 1px solid var(--line);
+}
+.brand-mark {
+  width: 43px; height: 43px; border-radius: 14px; background: var(--purple); color: white;
+  display: grid; place-items: center; font: 800 21px Manrope, sans-serif;
+  box-shadow: 0 7px 16px #6c4ce32b;
+}
+.brand-mark span { color: var(--orange); display: inline; }
+.brand-copy h1 { margin: 0; font: 800 18px Manrope, sans-serif; letter-spacing: -.5px; }
+.brand-copy p { margin: 3px 0 0; color: var(--muted); font-size: 11px; }
+.top-status { margin-left: auto; color: #625b70; font-size: 12px; font-weight: 600; }
+.status-dot { display: inline-block; width: 7px; height: 7px; background: #36bc83; border-radius: 50%; margin-right: 7px; }
+.layout {
+  width: min(1160px, 88%); margin: 42px auto 34px;
+  display: grid; grid-template-columns: 1fr 1.15fr; gap: 22px; align-items: start;
+}
+.intro { padding: 19px 12px 10px 2px; }
+.eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; color: var(--purple); margin: 0 0 11px; }
+.intro h2 { font: 800 clamp(30px, 4vw, 46px)/1.14 Manrope, sans-serif; letter-spacing: -1.7px; margin: 0; }
+.intro h2 span { color: var(--purple); }
+.intro-desc { color: var(--muted); max-width: 390px; line-height: 1.8; font-size: 13px; margin: 19px 0 30px; }
+.mini-stats { display: flex; gap: 12px; max-width: 420px; }
+.mini-stats > div { background: white; border: 1px solid var(--line); border-radius: 15px; padding: 15px 17px; flex: 1; min-width: 0; }
+.stat-icon { display: block; color: var(--orange); font-size: 20px; margin-bottom: 10px; }
+.mini-stats strong { display: block; font: 800 18px Manrope, sans-serif; overflow-wrap: anywhere; }
+.mini-stats small { display: block; color: var(--muted); font-size: 11px; margin-top: 4px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 19px; padding: 24px; box-shadow: 0 10px 30px #28203e06; }
+.product-panel { grid-column: 2; grid-row: 1; }
+.cart-panel { grid-column: 1 / -1; }
+.payment-panel { grid-column: 1 / -1; }
+.section-heading { display: flex; justify-content: space-between; align-items: center; margin-bottom: 23px; }
+.section-heading .eyebrow { margin-bottom: 6px; }
+h3 { font: 800 19px Manrope, sans-serif; margin: 0; letter-spacing: -.4px; }
+.step-number { color: #c7c1d6; font: 800 25px Manrope, sans-serif; }
+.cart-pill { color: var(--purple); background: var(--purple-light); border-radius: 20px; padding: 7px 12px; font-size: 11px; font-weight: 700; }
+label { display: block; font-size: 12px; font-weight: 700; margin: 0 0 8px; color: #514b60; }
+input {
+  width: 100%; padding: 13px 14px; border: 1px solid #e4e0ed; border-radius: 10px;
+  font: 13px 'DM Sans', sans-serif; color: var(--ink); outline: none; background: #fdfcff;
+  margin-bottom: 17px; transition: border .2s, box-shadow .2s;
+}
+input:focus { border-color: var(--purple); box-shadow: 0 0 0 3px #6c4ce31a; }
+.input-row { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
+.btn { border: 0; border-radius: 10px; padding: 13px 16px; font: 700 12px 'DM Sans', sans-serif; cursor: pointer; transition: transform .15s, opacity .15s; }
+.btn:hover { transform: translateY(-1px); }
+.btn-primary { width: 100%; background: var(--purple); color: white; box-shadow: 0 7px 16px #6c4ce32b; }
+.btn-dark { background: var(--ink); color: white; flex: 1; }
+.btn-light { background: #f0eef5; color: #5e576e; }
+.form-message { min-height: 15px; font-size: 11px; color: #d34d58; margin: -7px 0 12px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; white-space: nowrap; }
+th { background: #f8f7fb; color: #8d879a; font-size: 10px; text-transform: uppercase; letter-spacing: .8px; padding: 13px 12px; }
+td { border-bottom: 1px solid #f0edf5; padding: 15px 12px; font-size: 12px; }
+td:first-child { font-weight: 700; }
+.empty-row td { color: #9690a1; font-weight: 400; text-align: center; padding: 28px 12px; }
+.remove-btn { background: #fff0f0; color: #d34d58; border: 0; border-radius: 7px; padding: 6px 9px; cursor: pointer; font-size: 11px; }
+.totals { width: min(330px, 100%); margin: 20px 0 0 auto; }
+.totals > div { display: flex; justify-content: space-between; padding: 8px 0; color: #827c90; font-size: 12px; }
+.totals strong { color: var(--ink); }
+.totals .grand-total { border-top: 1px dashed #dcd6e8; margin-top: 6px; padding-top: 15px; color: var(--ink); font-weight: 700; }
+.grand-total strong { font: 800 21px Manrope, sans-serif; color: var(--purple); }
+.payment-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; }
+.payment-panel .section-heading { grid-column: 1 / -1; }
+.payment-panel > label, .payment-panel > input, .payment-panel .change-box, .payment-panel .form-message, .payment-panel .button-row, .payment-panel .note { grid-column: 1; }
+.change-box { background: var(--purple-light); padding: 15px; border-radius: 11px; display: flex; justify-content: space-between; align-items: center; margin: -2px 0 16px; font-size: 12px; color: #66569b; }
+.change-box strong { color: var(--purple); font: 800 19px Manrope, sans-serif; }
+.button-row { display: flex; gap: 9px; }
+.note { color: #9891a4; font-size: 10px; line-height: 1.6; margin: 15px 0 0; }
+footer { text-align: center; padding: 0 15px 26px; color: #a29cae; font-size: 11px; }
+footer span { color: var(--orange); padding: 0 5px; }
+@media (max-width: 760px) {
+  .topbar { padding: 0 6%; }
+  .layout { width: 90%; margin-top: 25px; grid-template-columns: 1fr; }
+  .intro, .product-panel, .cart-panel, .payment-panel { grid-column: 1; grid-row: auto; }
+  .intro { padding: 10px 2px 8px; }
+  .intro h2 { font-size: 37px; }
+  .payment-panel { grid-template-columns: 1fr; }
+  .payment-panel .section-heading, .payment-panel > label, .payment-panel > input, .payment-panel .change-box, .payment-panel .form-message, .payment-panel .button-row, .payment-panel .note { grid-column: 1; }
+  .panel { padding: 19px; }
+}
