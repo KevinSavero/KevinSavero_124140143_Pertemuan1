@@ -1,4 +1,4 @@
-KASIRKITA — MINI POS
+Pertemuan 1
 
 ## 1. Identitas Mahasiswa
 
@@ -121,14 +121,6 @@ Langkah-langkah menjalankan website:
 6. Website akan terbuka di browser dan siap digunakan.
 
 Untuk mencoba fitur website, masukkan nama produk, harga satuan, dan jumlah barang. Setelah itu, tambahkan produk ke keranjang, periksa hasil perhitungan, masukkan nominal pembayaran, lalu coba selesaikan transaksi.
-
----
-
-## 7. Screenshot Aplikasi
-
-![gambar](./screenshots/Screenshot 2026-10-10 105414.png)
-![gambar](./screenshots/Screenshot 2026-10-10 105438.png)
-![gambar](./screenshots/Screenshot 2026-10-10 112800.png)
 
 ---
 
